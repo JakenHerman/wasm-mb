@@ -1,5 +1,6 @@
 mod app;
 mod pages;
+mod atom;
 
 use app::App;
 
