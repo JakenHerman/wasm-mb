@@ -1,12 +1,19 @@
 use yew::prelude::*;
+use crate::pages;
 
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
         <main>
-            <img class="logo" src="https://yew.rs/img/logo.png" alt="Yew logo" />
-            <h1>{ "Hello World!" }</h1>
-            <span class="subtitle">{ "from Yew with " }<i class="heart" /></span>
+            <nav>
+                <ul class="navigation">
+                    { for pages::PAGES.iter().map(|page| html! {
+                        <li><a href={ page.link }>{ page.name }</a></li>
+                    }) }
+                </ul>
+            </nav>
+            <h1>{ "Jaken Herman" }</h1>
+            <span class="subtitle">{ "Welcome to my page." }</span>
         </main>
     }
 }

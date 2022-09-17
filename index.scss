@@ -2,34 +2,20 @@ html,
 body {
   height: 100%;
   margin: 0;
-}
 
-body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  .navigation { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-  background: linear-gradient(to bottom right, #444444, #009a5b);
-  font-size: 1.5rem;
-}
-
-main {
-  color: #fff6d5;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-.logo {
-  height: 20em;
-}
-
-.heart:after {
-  content: "❤️";
-
-  font-size: 1.75em;
-}
-
-h1 + .subtitle {
-  display: block;
-  margin-top: -1em;
+    li {
+      float: left;
+      a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+      }
+    }
+  }
 }
